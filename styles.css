@@ -29,7 +29,7 @@ p{
 .wave-text span {
   display: inline-block;
   animation: wave 2s ease-in-out infinite, glow 1.5s infinite alternate;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #fff;
   text-shadow: 0 0 5px var(--glow-color-start), 0 0 10px var(--glow-color-start), 
                0 0 20px var(--glow-color-start), 0 0 40px var(--glow-color-start), 
@@ -41,10 +41,11 @@ p{
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
- 
   align-items: center;
   margin-top: 100px;
   width: 80%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: center;
   gap: 100px;
 }
@@ -101,5 +102,36 @@ body{
     text-shadow: 0 0 10px var(--glow-color-end), 0 0 20px var(--glow-color-end), 
                  0 0 40px var(--glow-color-end), 0 0 80px var(--glow-color-end), 
                  0 0 160px var(--glow-color-end);
+  }
+}
+
+@media only screen and (max-width: 1206px) {
+
+  .wave-text span {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 764px) {
+
+  .wave-text span {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 574px) {
+
+  .wave-text span {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 486px) {
+
+  .wave-text span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 388px) {
+
+  .wave-text span {
+    font-size: 1.5rem;
   }
 }
