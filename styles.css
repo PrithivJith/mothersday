@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+  --glow-color-start:hsl(58, 97%, 68%) ;
+  --glow-color-end: hsl(14, 99%, 50%);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  color: hsl(24, 96%, 20%);
+}
+p{
+  font-family: "Permanent Marker";
+  color: hsl(58, 97%, 68%);
+  font-size: 4rem;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite, glow 1.5s infinite alternate;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 5px var(--glow-color-start), 0 0 10px var(--glow-color-start), 
+               0 0 20px var(--glow-color-start), 0 0 40px var(--glow-color-start), 
+               0 0 80px var(--glow-color-start);
+}
+
+.container {
+  background-color: hsla(24, 96%, 20%, 0.4);
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+ 
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+  justify-content: center;
+  gap: 100px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bgimg {
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.1s; }
+.wave-text span:nth-child(3) { animation-delay: 0.2s; }
+.wave-text span:nth-child(4) { animation-delay: 0.3s; }
+.wave-text span:nth-child(5) { animation-delay: 0.4s; }
+.wave-text span:nth-child(6) { animation-delay: 0.5s; }
+.wave-text span:nth-child(7) { animation-delay: 0.6s; }
+.wave-text span:nth-child(8) { animation-delay: 0.7s; }
+.wave-text span:nth-child(9) { animation-delay: 0.8s; }
+.wave-text span:nth-child(10) { animation-delay: 0.9s; }
+.wave-text span:nth-child(11) { animation-delay: 1s; }
+.wave-text span:nth-child(12) { animation-delay: 1.1s; }
+.wave-text span:nth-child(13) { animation-delay: 1.2s; }
+.wave-text span:nth-child(14) { animation-delay: 1.3s; }
+.wave-text span:nth-child(15) { animation-delay: 1.4s; }
+.wave-text span:nth-child(16) { animation-delay: 1.5s; }
+.wave-text span:nth-child(17) { animation-delay: 1.6s; }
+.wave-text span:nth-child(18) { animation-delay: 1.7s; }
+.wave-text span:nth-child(19) { animation-delay: 1.8s; }
+.wave-text span:nth-child(20) { animation-delay: 1.9s; }
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px var(--glow-color-start), 0 0 10px var(--glow-color-start), 
+                 0 0 20px var(--glow-color-start), 0 0 40px var(--glow-color-start), 
+                 0 0 80px var(--glow-color-start);
+  }
+  100% {
+    text-shadow: 0 0 10px var(--glow-color-end), 0 0 20px var(--glow-color-end), 
+                 0 0 40px var(--glow-color-end), 0 0 80px var(--glow-color-end), 
+                 0 0 160px var(--glow-color-end);
+  }
+}
